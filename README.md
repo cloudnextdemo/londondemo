@@ -1,14 +1,5 @@
-**index.js**
 
-```Javascript
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 8080
-
-app.get('/', (req, res) => res.send('Hello World!'))
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-```
+# Simple Node.JS app
 
 ```Dockerfile
 # Use the official lightweight Node.js 12 image.
@@ -33,6 +24,8 @@ COPY . ./
 CMD [ "npm", "start" ]
 
 ```
+
+***Using Cloud Shell...***
 
 Build and run locally...
 ```
